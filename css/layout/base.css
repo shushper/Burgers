@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 1100px;
+    min-height: 100%;
+}
+
+.section {
+    height: 100vh;
+    min-height: 650px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}   
+
+.container_small {
+    width: 940px;  
+}
+
+
+
+
