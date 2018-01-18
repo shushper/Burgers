@@ -1,6 +1,8 @@
 .section_first {
     background-image: url('../../images/bg/section-first.jpg');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .container_first {
@@ -147,10 +149,6 @@
 }
 
 .first__content-title {
-    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    color: #f9b43b;
-    font-size: 72px;
-    font-weight: 400;
     margin-bottom: 8px;
 }
 

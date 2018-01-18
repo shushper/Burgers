@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.title_yellow {
+    color: #f9b43b;
+}
+
+.title_white {
+    color: #ffffff;
+}
+
+.title_black {
+    color: #2f3234;
+}
