@@ -1,5 +1,5 @@
 .section_first {
-    background-image: url('/images/bg/section-first.jpg');
+    background-image: url('../../images/bg/section-first.jpg');
     background-size: cover;
 }
 
@@ -25,7 +25,7 @@
 .logo__image {
     width: 92px;
     height: 69px;
-    background-image: url('/images/icons/logo.svg');
+    background-image: url('../../images/icons/logo.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 92px 69px;
@@ -134,7 +134,7 @@
 .first__content-image {
     width: 451px;
     height: 424px;
-    background-image: url('/images/content/first-burger.png');
+    background-image: url('../../images/content/first-burger.png');
     background-repeat: no-repeat;
 }
 
@@ -167,6 +167,6 @@
     width: 29px;
     height: 14px;
     margin-bottom: 40px;
-    background-image: url('/images/icons/arrow-scroll.svg');
+    background-image: url('../../images/icons/arrow-scroll.svg');
     background-size: 29px 14px;
 }

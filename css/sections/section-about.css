@@ -1,4 +1,4 @@
 .section__about {
-    background-image: url('/images/bg/section-about.jpg');
+    background-image: url('../../images/bg/section-about.jpg');
     background-size: cover;
 }
