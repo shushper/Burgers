@@ -60,6 +60,7 @@
     margin-top: 14px;
     line-height: 1.7;
     text-decoration: none;
+    transition: background-color 300ms;
 }
 
 .reviews__details:hover {
