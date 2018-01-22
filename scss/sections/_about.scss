@@ -37,28 +37,27 @@
     background-repeat: no-repeat;
     background-position: center center;
     margin-bottom: 28px;
-}
 
-.feature__icon_meat {
-    width: 97px;
-    height: 90px;
-    background-image: url('../images/icons/meat.svg');
-    background-size: 97px 90px;
-}
+    &_meat {
+        width: 97px;
+        height: 90px;
+        background-image: url('../images/icons/meat.svg');
+        background-size: 97px 90px;
+    }
 
-.feature__icon_hand {
-    width: 73px;
-    height: 89px;
-    background-image: url('../images/icons/hand.svg');
-    background-size: 73px 89px;
-}
+    &_hand {
+        width: 73px;
+        height: 89px;
+        background-image: url('../images/icons/hand.svg');
+        background-size: 73px 89px;
+    }
 
-.feature__icon_natural {
-    width: 88px;
-    height: 76px;
-    background-image: url('../images/icons/natural.svg');
-    background-size: 88px 76px;
-    
+    &_natural {
+        width: 88px;
+        height: 76px;
+        background-image: url('../images/icons/natural.svg');
+        background-size: 88px 76px;
+    }
 }
 
 .feature__title {
