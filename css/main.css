@@ -350,7 +350,9 @@ ul {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .reviews__content {
   display: -webkit-box;
