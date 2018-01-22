@@ -1,0 +1,38 @@
+.scroll {
+    top:90px;
+    right: 49px;
+    position: fixed;
+}
+
+.scroll__item {
+    margin-bottom: 5px; 
+}
+
+.scroll__item:last-child {
+    margin-bottom: 0px;
+}
+
+.scroll__link {
+    display: block;
+}
+
+.scroll__dot_wrapper {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border 300ms;
+}
+
+.scroll__dot {
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.scroll__item_active .scroll__dot_wrapper, .scroll__item:hover .scroll__dot_wrapper {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}

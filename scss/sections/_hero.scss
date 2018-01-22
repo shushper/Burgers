@@ -1,0 +1,118 @@
+.hero {
+    background-image: url('../images/bg/hero-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;   
+    flex-direction: row;
+    align-self: stretch;
+}
+
+.header__menu {
+    margin-left: auto;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 12px;
+        @include circle(4px, #ffffff)
+    }
+
+    &:first-child:before {
+        display: none;
+    }
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.nav__link {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: $medium;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.order {
+    display: block;
+    font-size: 13px;
+    font-weight: $medium;
+    color: white;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    background-color: $orange;
+    border-radius: 5px;
+    margin-left: 14px;
+    text-decoration: none;
+    transition: background-color 300ms;
+
+    &:hover {
+        background-color: darken($orange, 7%);
+    }
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.hero__image {
+    width: 451px;
+    height: 424px;
+    background-image: url('../images/content/hero-burger.png');
+    background-repeat: no-repeat;
+}
+
+.hero__text {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__text-title {
+    margin-bottom: 8px;
+}
+
+.hero__text-subtitle {
+    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: $medium;
+    line-height: 0.94;
+    letter-spacing: -1.5px;
+}
+
+.hero__downward {
+    width: 29px;
+    height: 14px;
+    margin-bottom: 40px;
+    background-image: url('../images/icons/arrow-scroll.svg');
+    background-size: 29px 14px;
+}

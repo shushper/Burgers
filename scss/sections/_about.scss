@@ -1,5 +1,5 @@
-.section_about {
-    background-image: url('../../images/bg/section-about.jpg');
+.about {
+    background-image: url('../images/bg/about-bg.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,35 +42,35 @@
 .feature__icon_meat {
     width: 97px;
     height: 90px;
-    background-image: url('../../images/icons/meat.svg');
+    background-image: url('../images/icons/meat.svg');
     background-size: 97px 90px;
 }
 
 .feature__icon_hand {
     width: 73px;
     height: 89px;
-    background-image: url('../../images/icons/hand.svg');
+    background-image: url('../images/icons/hand.svg');
     background-size: 73px 89px;
 }
 
 .feature__icon_natural {
     width: 88px;
     height: 76px;
-    background-image: url('../../images/icons/natural.svg');
+    background-image: url('../images/icons/natural.svg');
     background-size: 88px 76px;
     
 }
 
 .feature__title {
     font-family: 'Lifehack', Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: $medium;
     font-size: 24px;
     color: #2f3234;
     margin-bottom: 12px;
 }
 
 .feature__desc {
-    font-weight: 300;
+    font-weight: $light;
     font-size: 14px;
     text-align: center;
     color: #2f3234;
