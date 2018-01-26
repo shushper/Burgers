@@ -27,9 +27,8 @@
     background-color: rgba(20, 20, 20, 0.7);
     opacity: 0;
     transition: opacity 300ms;
-    padding: 20px;
-    align-items: left;
-    justify-content: center;
+    padding: 40px 20px;
+    align-items: flex-start;
 }
 
 .reviews__item:hover .reviews__content {

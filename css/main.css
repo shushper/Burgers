@@ -84,7 +84,8 @@ ul {
   margin-bottom: 0px; }
 
 .scroll__link {
-  display: block; }
+  display: block;
+  color: white; }
 
 .scroll__dot_wrapper {
   width: 16px;
@@ -105,11 +106,11 @@ ul {
 .scroll__dot {
   width: 6px;
   height: 6px;
-  background: #ffffff;
+  background: white;
   border-radius: 50%; }
 
 .scroll__item:hover .scroll__dot_wrapper {
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   border-radius: 50%; }
 
 .hero {
@@ -180,6 +181,9 @@ ul {
   .nav__link:hover {
     text-decoration: underline; }
 
+.header__btn {
+  margin-left: 14px; }
+
 .order {
   display: block;
   font-size: 13px;
@@ -189,7 +193,6 @@ ul {
   padding: 6px 15px;
   background-color: #e45028;
   border-radius: 5px;
-  margin-left: 14px;
   text-decoration: none;
   -webkit-transition: background-color 300ms;
   -o-transition: background-color 300ms;
@@ -265,9 +268,6 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-
-.about__content {
-  width: 100%; }
 
 .about__title {
   text-align: center;
@@ -369,13 +369,10 @@ ul {
   -webkit-transition: opacity 300ms;
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
-  padding: 20px;
-  -webkit-box-align: left;
-  -ms-flex-align: left;
-  align-items: left;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  padding: 40px 20px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
 
 .reviews__item:hover .reviews__content {
   opacity: 1; }

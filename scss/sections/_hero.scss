@@ -59,6 +59,10 @@
     }
 }
 
+.header__btn {
+    margin-left: 14px;
+}
+
 .order {
     display: block;
     font-size: 13px;
@@ -68,7 +72,6 @@
     padding: 6px 15px;
     background-color: $orange;
     border-radius: 5px;
-    margin-left: 14px;
     text-decoration: none;
     transition: background-color 300ms;
 

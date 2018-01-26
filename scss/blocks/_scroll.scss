@@ -14,6 +14,7 @@
 
 .scroll__link {
     display: block;
+    color: white;
 }
 
 .scroll__dot_wrapper {
@@ -28,11 +29,11 @@
 .scroll__dot {
     width: 6px;
     height: 6px;
-    background: #ffffff;
+    background: white;
     border-radius: 50%;
 }
 
 .scroll__item:hover .scroll__dot_wrapper {
-    border: 1px solid #ffffff;
+    border: 1px solid white;
     border-radius: 50%;
 }
