@@ -61,7 +61,7 @@ h2 {
 .container_small {
   width: 940px; }
 
-.title, .title_yellow, .title_white, .title_black {
+.title, .title_yellow, .title_white, .title_black, .menu__trigger-text {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
   font-size: 72px;
   font-weight: 400; }
@@ -117,7 +117,7 @@ h2 {
   border-radius: 50%; }
 
 .hero {
-  background-image: url("../images/bg/hero-bg.jpg");
+  background-image: url("../images/bg/sections/hero-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -253,7 +253,7 @@ h2 {
   background-size: 29px 14px; }
 
 .about {
-  background-image: url("../images/bg/about-bg.jpg");
+  background-image: url("../images/bg/sections/about-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -334,7 +334,7 @@ h2 {
   line-height: 1.7; }
 
 .team {
-  background-image: url("../images/bg/team-bg.jpg");
+  background-image: url("../images/bg/sections/team-bg.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -439,6 +439,76 @@ h2 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
+
+.menu {
+  background-image: url("../images/bg/sections/menu-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.menu__title {
+  position: absolute;
+  left: 9%;
+  top: 13%; }
+
+.menu__accordeon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__trigger {
+  display: block;
+  width: 80px;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.menu__trigger-text {
+  font-size: 40px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  right: 0px;
+  top: auto;
+  white-space: nowrap;
+  color: white; }
+
+.menu__content {
+  height: 100%;
+  width: 0px;
+  background-color: #2f3234;
+  opacity: 0.93;
+  overflow: hidden; }
+
+.menu__content-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 60px 30px; }
+
+.menu__item_active .menu__content {
+  width: 540px; }
+
+.menu__item_active .menu__trigger-text {
+  color: #f9b43b; }
 
 .reviews__list {
   height: 100%;
