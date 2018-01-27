@@ -1,0 +1,121 @@
+.team {
+    background-image: url('../images/bg/team-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.team__content {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $dark;
+    opacity: 0.93;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 88px;
+}
+
+.team__title {
+    width: 70%;
+    margin-bottom: 23px;
+    padding: 0 25px;
+}
+
+.team__accordeon {
+    width: 70%;
+    padding: 0 25px;
+}
+
+.team__item {
+    margin-bottom: 28px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.team__trigger {
+    display: block;
+    text-decoration: none;
+    
+}
+
+.team__trigger-triangle {
+    width: 9px;
+    height: 6px;
+    fill: $yellow;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.team__trigger-title {
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: $regular;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.team__member {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    // padding-top: 12px;
+    // padding-left: 17px;
+    // padding-bottom: 12px;
+}
+
+.team__member-text {
+    font-size: 14px;
+    color: white;
+   
+    .team__member-title {
+        font-weight: $bold;
+    }
+
+    .team__member-decs {
+        font-weight: $light;
+    }
+}
+
+.team__member-text {
+    padding: 12px 0;
+}
+
+.team__member-desc {
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.team__member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-left: 17px;
+    margin-top: 15px;
+    margin-right: 21px;
+}
+
+.team__item_active {
+    .team__trigger-title {
+        color: $yellow;
+    }
+    .team__member {
+        height: initial;
+    }
+    .team__trigger-triangle {
+        transform: rotate(180deg);
+    }
+}
+
