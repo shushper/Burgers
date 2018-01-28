@@ -1,3 +1,10 @@
+//font weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+
 @font-face {
     font-family: 'Gagalin';
     src: url('../fonts/gagalin-regular-webfont.woff2') format('woff2'),
@@ -13,4 +20,22 @@
          url('../fonts/lifehack_medium-webfont.woff') format('woff');
     font-weight: $medium;
     font-style: normal;
+}
+
+@mixin gagalin($size) {
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-weight: $regular;
+    font-size: $size;
+}
+
+@mixin lifehack($size) {
+    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+    font-weight: $medium;
+    font-size: $size;
+}
+
+@mixin ubuntu($weight, $size) {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
 }

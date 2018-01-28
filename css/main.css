@@ -15,6 +15,8 @@ body, html {
 
 body {
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -60,8 +62,8 @@ h2 {
 
 .title, .title_yellow, .title_white, .title_black, .menu__trigger-text {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-  font-size: 72px;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 72px; }
 
 .title_yellow {
   color: #f9b43b; }
@@ -172,9 +174,10 @@ h2 {
     margin-right: 0px; }
 
 .nav__link {
-  display: inline-block;
-  font-size: 13px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  font-size: 13px;
+  display: inline-block;
   color: white;
   text-decoration: none;
   text-transform: uppercase; }
@@ -185,9 +188,10 @@ h2 {
   margin-left: 14px; }
 
 .order {
-  display: block;
-  font-size: 13px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  font-size: 13px;
+  display: block;
   color: white;
   text-transform: uppercase;
   padding: 6px 15px;
@@ -237,9 +241,9 @@ h2 {
 
 .hero__text-subtitle {
   font-family: 'Lifehack', Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  font-size: 65px;
   font-weight: 500;
+  font-size: 65px;
+  color: #ffffff;
   line-height: 0.94;
   letter-spacing: -1.5px; }
 
@@ -323,6 +327,7 @@ h2 {
   margin-bottom: 12px; }
 
 .feature__desc {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 14px;
   text-align: center;
@@ -384,8 +389,8 @@ h2 {
 
 .team__trigger-title {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   color: white;
   display: inline-block;
   vertical-align: middle;
@@ -398,13 +403,17 @@ h2 {
   height: 0;
   overflow: hidden; }
 
-.team__member-text {
+.team__member-title {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 700;
   font-size: 14px;
   color: white; }
-  .team__member-text .team__member-title {
-    font-weight: 700; }
-  .team__member-text .team__member-decs {
-    font-weight: 300; }
+
+.team__member-desc {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white; }
 
 .team__member-text {
   padding: 12px 0; }
@@ -496,9 +505,10 @@ h2 {
   overflow: hidden; }
 
 .menu__content-text {
-  color: white;
-  font-size: 14px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 300;
+  font-size: 14px;
+  color: white;
   padding: 60px 30px; }
 
 .menu__item_active .menu__content {
@@ -557,22 +567,24 @@ h2 {
 
 .reviews__title {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-  font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  font-size: 14px;
+  color: white;
   text-transform: uppercase; }
 
 .reviews__text {
-  font-size: 14px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  font-size: 14px;
+  color: white;
   margin-top: 20px; }
 
 .reviews__details {
-  padding: 10px 16px;
-  color: #ffffff;
-  font-size: 13px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  font-size: 13px;
+  padding: 10px 16px;
+  color: white;
   text-transform: uppercase;
   background-color: #2f3234;
   border-radius: 6px;
@@ -621,25 +633,32 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .footer__section_left {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
   .footer__section_right {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
 
 .contacts__info {
-  font-style: normal;
-  font-size: 14px; }
+  font-style: normal; }
 
 .contacts__info-address {
-  color: white;
-  font-weight: 300; }
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white; }
 
 .contacts__info-phone {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #e45028;
-  font-weight: 700;
   text-decoration: none;
   -webkit-box-align: center;
   -ms-flex-align: center;

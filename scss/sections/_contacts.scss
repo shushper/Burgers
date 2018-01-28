@@ -33,25 +33,28 @@
     display: flex;
     align-items: center;
 
-    &_right{
+    &_left {
+        justify-content: flex-start;
+    }
+
+    &_right {
         justify-content: flex-end;
     }
 }
 
 .contacts__info {
     font-style: normal;
-    font-size: 14px;
 }
 
 .contacts__info-address {
+    @include ubuntu($light, 14px);
     color: white;
-    font-weight: $light;
 }
 
 .contacts__info-phone {
+    @include ubuntu($bold, 14px);
     display: flex;
     color: $orange;
-    font-weight: $bold;
     text-decoration: none;
     align-items: center;
 }

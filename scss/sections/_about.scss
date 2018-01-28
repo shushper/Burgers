@@ -57,16 +57,13 @@
 }
 
 .feature__title {
-    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
-    font-weight: $medium;
-    font-size: 24px;
+    @include lifehack(24px);
     color: #2f3234;
     margin-bottom: 12px;
 }
 
 .feature__desc {
-    font-weight: $light;
-    font-size: 14px;
+    @include ubuntu($light, 14px);
     text-align: center;
     color: #2f3234;
     padding: 0 8px;

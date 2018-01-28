@@ -36,25 +36,21 @@
 }
 
 .reviews__title {
-    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: $regular;
-    color: #ffffff;
+    @include gagalin(14px);
+    color: white;
     text-transform: uppercase;
 }
 
 .reviews__text {
-    font-size: 14px;
-    font-weight: $light;
-    color: #ffffff;
+    @include ubuntu($light, 14px);
+    color: white;
     margin-top: 20px;
 }
 
 .reviews__details {
+    @include ubuntu($medium, 13px);
     padding: 10px 16px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: $medium;
+    color: white;
     text-transform: uppercase;
     background-color: #2f3234;
     border-radius: 6px;

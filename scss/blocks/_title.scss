@@ -1,7 +1,5 @@
 .title {
-    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    font-weight: $regular;
+    @include gagalin(72px);
 }
 
 .title_yellow {
