@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-    @include ubuntu($regular, 14px);
+    @include ubuntu($regular, 16px);
     line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,23 @@ ul {
     list-style: none;
 }
 
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: $regular;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+p {
+    padding: 0;
     margin: 0;
 }
 
