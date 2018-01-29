@@ -13,8 +13,7 @@
 
 <body>
     <div class="wrapper">
-
-        <footer class="maincontent">
+        <div class="maincontent">
             <section class="section hero" id="hero">
                 <div class="container container_hero">
                     <header class="header">
@@ -57,7 +56,9 @@
                     </header>
 
                     <div class="hero__content">
-                        <div class="hero__image"></div>
+                        <div class="hero__image">
+                            <img class="hero__image-pic" alt="burger" src="images/content/hero-burger.png" />
+                        </div>
 
                         <div class="hero__text">
                             <h2 class="hero__text-title title_yellow">Мы делаем</h2>
@@ -66,7 +67,11 @@
                         </div>
                     </div>
 
-                    <a href="#about" class="hero__downward"></a>
+                    <a href="#about" class="hero__downward">
+                        <svg class="hero__downward-icon">
+                            <use xlink:href="images/sprite/sprite.svg#arrow-scroll"></use>
+                        </svg>
+                    </a>
                 </div>
             </section>
 
@@ -75,101 +80,151 @@
                     <h2 class="about__title title_black">Мы лучшие</h2>
                     <ul class="about__features">
                         <li class="about__feature">
-                            <div class="feature__icon feature__icon_meat"></div>
-                            <div class="feature__title">100% свежее мясо</div>
-                            <div class="feature__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                            <div class="feature__icon">
+                                <svg class="feature__pic feature__pic_meat">
+                                    <use xlink:href="images/sprite/sprite.svg#meat"></use>
+                                </svg>
+                            </div>
+                            <div class="feature__info">
+                                <div class="feature__title">100% свежее мясо</div>
+                                <div class="feature__desc">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                    </p>
+                                </div>
+                            </div>
+
                         </li>
 
                         <li class="about__feature">
-                            <div class="feature__icon feature__icon_hand"></div>
-                            <div class="feature__title">Ручная сборка</div>
-                            <div class="feature__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
-                                притягивает сюжетный реформаторский пафос.</div>
+                            <div class="feature__icon">
+                                <svg class="feature__pic feature__pic_hand">
+                                    <use xlink:href="images/sprite/sprite.svg#hand"></use>
+                                </svg>
+                            </div>
+                            <div class="feature__info">
+                                <div class="feature__title">Ручная сборка</div>
+                                <div class="feature__desc">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
+                                        пафос.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="about__feature">
-                            <div class="feature__icon feature__icon_natural"></div>
-                            <div class="feature__title">Натуральные
-                                <br>ингридиенты</div>
-                            <div class="feature__desc">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                            <div class="feature__icon">
+                                <svg class="feature__pic feature__pic_natural">
+                                    <use xlink:href="images/sprite/sprite.svg#natural"></use>
+                                </svg>
+                            </div>
+                            <div class="feature__info">
+                                <div class="feature__title">Натуральные
+                                    <br>ингридиенты</div>
+                                <div class="feature__desc">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                    </p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="section team" id="team">
-                <div class="team__content">
-                    <h2 class="team__title title_yellow">Команда</h2>
-                    <ul class="team__accordeon">
-                        <li class="team__item">
-                            <a href="#" class="team__trigger">
-                                <svg class="team__trigger-triangle">
-                                    <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
-                                </svg>
-                                <div class="team__trigger-title">Даниэл Редклиф</div>
-                            </a>
-                            <div class="team__member">
-                                <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
-                                    <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                <div class="team__container">
+                    <div class="team__content">
+                        <h2 class="team__title title_yellow">Команда</h2>
+                        <ul class="team__acco">
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">
+                                    <svg class="team__trigger-triangle">
+                                        <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
+                                    </svg>
+                                    <div class="team__trigger-title">Даниэл Редклиф</div>
+                                </a>
+                                <div class="team__member">
+                                    <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
+                                        <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                                    </div>
+                                    <div class="team__member-text">
+                                        <div class="team__member-title">Оператор</div>
+                                        <div class="team__member-desc">
+                                            <p>
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="team__member-text">
-                                    <div class="team__member-title">Оператор</div>
-                                    <div class="team__member-desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </li>
+                            <li class="team__item team__item_active">
+                                <a href="#" class="team__trigger">
+                                    <svg class="team__trigger-triangle">
+                                        <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
+                                    </svg>
+                                    <div class="team__trigger-title">Ричард Джеймс</div>
+                                </a>
+                                <div class="team__member">
+                                    <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
+                                        <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                                    </div>
+                                    <div class="team__member-text">
+                                        <div class="team__member-title">Оператор</div>
+                                        <div class="team__member-desc">
+
+                                            <p>
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="team__item team__item_active">
-                            <a href="#" class="team__trigger">
-                                <svg class="team__trigger-triangle">
-                                    <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
-                                </svg>
-                                <div class="team__trigger-title">Ричард Джеймс</div>
-                            </a>
-                            <div class="team__member">
-                                <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
-                                    <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">
+                                    <svg class="team__trigger-triangle">
+                                        <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
+                                    </svg>
+                                    <div class="team__trigger-title">Джейк Финн</div>
+                                </a>
+                                <div class="team__member">
+                                    <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
+                                        <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                                    </div>
+                                    <div class="team__member-text">
+                                        <div class="team__member-title">Оператор</div>
+                                        <div class="team__member-desc">
+                                            <p>
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="team__member-text">
-                                    <div class="team__member-title">Оператор</div>
-                                    <div class="team__member-desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">
+                                    <svg class="team__trigger-triangle">
+                                        <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
+                                    </svg>
+                                    <div class="team__trigger-title">Николай Иванов</div>
+                                </a>
+                                <div class="team__member">
+                                    <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
+                                        <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
+                                    </div>
+                                    <div class="team__member-text">
+                                        <div class="team__member-title">Оператор</div>
+                                        <div class="team__member-desc">
+                                            <p>
+                                                С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <a href="#" class="team__trigger">
-                                <svg class="team__trigger-triangle">
-                                    <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
-                                </svg>
-                                <div class="team__trigger-title">Джейк Финн</div>
-                            </a>
-                            <div class="team__member">
-                                <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
-                                    <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
-                                </div>
-                                <div class="team__member-text">
-                                    <div class="team__member-title">Оператор</div>
-                                    <div class="team__member-desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="team__item">
-                            <a href="#" class="team__trigger">
-                                <svg class="team__trigger-triangle">
-                                    <use xlink:href="images/sprite/sprite.svg#team-trigger"></use>
-                                </svg>
-                                <div class="team__trigger-title">Николай Иванов</div>
-                            </a>
-                            <div class="team__member">
-                                <div class="team__member-photo" style="background-image:url(images/content/team-photo.jpg)">
-                                    <img src="images/content/team-photo.jpg" alt="team member photo" class="team__member-img visuallyhidden">
-                                </div>
-                                <div class="team__member-text">
-                                    <div class="team__member-title">Оператор</div>
-                                    <div class="team__member-desc">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -368,72 +423,71 @@
                     </div>
                 </footer>
             </section>
+        </div>
 
-
+        <nav class="scroll">
+            <ul class="scroll__list">
+                <li class="scroll__item">
+                    <a href="#hero" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#about" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#team" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#menu" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#reviews" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#contacts" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="scroll__item">
+                    <a href="#" class="scroll__link">
+                        <div class="scroll__dot_wrapper">
+                            <div class="scroll__dot"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    </div>
 
-    <nav class="scroll">
-        <ul class="scroll__list">
-            <li class="scroll__item">
-                <a href="#hero" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#about" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#team" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#menu" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#reviews" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#contacts" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="scroll__item">
-                <a href="#" class="scroll__link">
-                    <div class="scroll__dot_wrapper">
-                        <div class="scroll__dot"></div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </nav>
 </body>
 
 </html>

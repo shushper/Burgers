@@ -25,22 +25,28 @@
     margin-left: auto;
 }
 
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
 .nav__item {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     margin-right: 12px;
 
     &:before {
         content: "";
-        display: inline-block;
-        vertical-align: middle;
+        display: block;
         margin-right: 12px;
         @include circle(4px, #ffffff)
     }
 
-    &:first-child:before {
-        display: none;
-    }
+    &:first-child {
+        &:before {
+            display: none;
+        }
+    } 
 
     &:last-child {
         margin-right: 0px;
@@ -49,8 +55,8 @@
 
 .nav__link {
     @include ubuntu($medium, 13px);
-    display: inline-block;
     color: white;
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     &:hover {
@@ -79,17 +85,11 @@
 }
 
 .hero__content {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     align-items: center;
-}
-
-.hero__image {
-    width: 451px;
-    height: 424px;
-    background-image: url('../images/content/hero-burger.png');
-    background-repeat: no-repeat;
 }
 
 .hero__text {
@@ -111,8 +111,12 @@
 }
 
 .hero__downward {
+    display: block;
+}
+
+.hero__downward-icon {
     width: 29px;
     height: 14px;
-    background-image: url('../images/icons/arrow-scroll.svg');
-    background-size: 29px 14px;
+    fill: white;
 }
+

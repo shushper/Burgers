@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.team__content {
+.team__container {
     position: absolute;
     left: 50%;
     right: 0;
@@ -20,14 +20,16 @@
     padding-top: 88px;
 }
 
-.team__title {
+.team__content {
     width: 70%;
+}
+
+.team__title {
     margin-bottom: 23px;
     padding: 0 25px;
 }
 
-.team__accordeon {
-    width: 70%;
+.team__acco {
     padding: 0 25px;
 }
 
@@ -41,8 +43,7 @@
 
 .team__trigger {
     display: block;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
 .team__trigger-triangle {

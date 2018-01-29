@@ -4,15 +4,15 @@
 
 .title_yellow {
     @extend .title;
-    color: #f9b43b;
+    color: $yellow;
 }
 
 .title_white {
     @extend .title;
-    color: #ffffff;
+    color: white;
 }
 
 .title_black {
     @extend .title;
-    color: #2f3234;
+    color: $dark;
 }
