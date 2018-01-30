@@ -49,8 +49,8 @@
                             </nav>
                         </div>
 
-                        <div class="header__btn">
-                            <a href="#" class="order">Заказать</a>
+                        <div class="header__order">
+                            <a href="#" class="order-btn">Заказать</a>
                         </div>
 
                     </header>
@@ -368,6 +368,96 @@
                         </div>
                     </li>
                 </ul>
+            </section>
+
+            <section class="section order" id="order">
+                <div class="container container_order">
+                    <h2 class="order__title title_yellow">Закажите доставку</h2>
+                    <form action="" class="form">
+                        <div class="form__section">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Имя</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Телефон</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Улица</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Дом</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Корпус</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Квартира</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__title">Этаж</div>
+                                    <input type="text" name="" class="form__input">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__section">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__title">Комментарий</div>
+                                    <textarea name="" class="form__comment"></textarea>
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label class="form__toggle">
+                                    <input type="radio" name="payment" id="cash" class="form__toggle-input">
+                                    <div class="form__toggle-fake form__toggle-fake_radio">
+                                        <div class="form__toggle-fake_flag form__toggle-fake_dot"></div>
+                                    </div>
+                                    <div class="form__title">Потребуется сдача</div>
+                                </label>
+                                <label class="form__toggle">
+                                    <input type="radio" name="payment" id="cash" class="form__toggle-input" checked>
+                                    <div class="form__toggle-fake form__toggle-fake_radio">
+                                        <div class="form__toggle-fake_flag form__toggle-fake_dot"></div>
+                                    </div>
+                                    <div class="form__title">Оплата по карте</div>
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label class="form__toggle">
+                                    <input type="checkbox" class="form__toggle-input">
+                                    <div class="form__toggle-fake">
+                                        <svg class="form__toggle-fake_flag form__toggle-fake_check">
+                                            <use xlink:href="images/sprite/sprite.svg#check"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="form__title">Не перезванивать</div>
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <button class="order-btn" type="submit">Заказать</button>
+                                <button class="clear-btn" type="reset">Очистить</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
             </section>
 
             <section class="section contacts" id="contacts">

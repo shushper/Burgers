@@ -1,0 +1,147 @@
+.order {
+    background-image: url('../images/bg/sections/order-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.container_order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order__title {
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__section {
+    width: 48.5%;
+}
+
+.form__title {
+    @include ubuntu($light, 14px);
+    color: white;
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form__block {
+    display: block;
+    flex: 1;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__input {
+    border: 2px solid white;
+    padding: 6px 20px;
+    background: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form__comment {
+    border: 2px solid white;
+    padding: 6px 20px;
+    resize: none;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    height: 110px;
+    margin-top: 5px;
+}
+
+.form__input:hover,
+.form__input:focus,
+.form__comment:hover,
+.form__comment:focus {
+    border-color: $yellow;
+    outline: none;
+}
+
+
+.form__toggle {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__toggle-input {
+    display: none;
+
+    &:checked + .form__toggle-fake {
+        .form__toggle-fake_flag {
+            opacity: 1;
+        }
+    }
+}
+
+.form__toggle-fake {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_radio {
+        border-radius: 50%;
+    }
+}
+
+.form__toggle-fake_flag {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+
+.form__toggle-fake_dot {
+    width: 7px;
+    height: 7px;
+    background-color: $orange;
+    border-radius: 50%;
+}
+
+.form__toggle-fake_check {
+    width: 11px;
+    height: 11px;
+    stroke: $orange;
+}
+
+.clear-btn {
+    @include ubuntu($light, 14px);
+    color: white;
+    background-color: transparent;
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
