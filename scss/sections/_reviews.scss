@@ -36,19 +36,22 @@
 }
 
 .reviews__title {
-    @include gagalin(14px);
+    @include gagalin();
+    font-size: rem(14px);
     color: white;
     text-transform: uppercase;
 }
 
 .reviews__text {
-    @include ubuntu($light, 14px);
+    @include ubuntu($light);
+    font-size: (14px);
     color: white;
     margin-top: 20px;
 }
 
 .reviews__details {
-    @include ubuntu($medium, 13px);
+    @include ubuntu($medium);
+    font-size: rem(13px);
     padding: 10px 16px;
     color: white;
     text-transform: uppercase;

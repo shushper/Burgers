@@ -1,5 +1,6 @@
 .title {
-    @include gagalin(72px);
+    @include gagalin();
+    font-size: rem(72px);
 }
 
 .title_yellow {

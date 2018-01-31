@@ -59,7 +59,8 @@
 }
 
 .menu__content-text {
-    @include ubuntu($light, 14px);
+    @include ubuntu($light);
+    font-size: rem(14px);
     color: white;
     padding: 60px 30px;
 }

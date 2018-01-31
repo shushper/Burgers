@@ -47,12 +47,14 @@
 }
 
 .contacts__info-address {
-    @include ubuntu($light, 14px);
+    @include ubuntu($light);
+    font-size: rem(14px);
     color: white;
 }
 
 .contacts__info-phone {
-    @include ubuntu($bold, 14px);
+    @include ubuntu($bold);
+    font-size: rem(14px);
     display: flex;
     color: $orange;
     text-decoration: none;

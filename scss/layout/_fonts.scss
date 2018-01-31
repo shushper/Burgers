@@ -22,20 +22,17 @@ $bold: 700;
     font-style: normal;
 }
 
-@mixin gagalin($size) {
+@mixin gagalin() {
     font-family: 'Gagalin', Arial, Helvetica, sans-serif;
     font-weight: $regular;
-    font-size: $size;
 }
 
-@mixin lifehack($size) {
+@mixin lifehack() {
     font-family: 'Lifehack', Arial, Helvetica, sans-serif;
     font-weight: $medium;
-    font-size: $size;
 }
 
-@mixin ubuntu($weight, $size) {
+@mixin ubuntu($weight) {
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: $weight;
-    font-size: $size;
 }

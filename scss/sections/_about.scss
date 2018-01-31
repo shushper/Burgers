@@ -57,14 +57,16 @@
 }
 
 .feature__title {
-    @include lifehack(24px);
+    @include lifehack();
+    font-size: rem(24px);
     color: #2f3234;
     margin-bottom: 12px;
 }
 
 .feature__desc {
     p {
-        @include ubuntu($light, 14px);
+        @include ubuntu($light);
+        font-size: rem(14px);
         text-align: center;
         color: #2f3234;
         padding: 0 8px;

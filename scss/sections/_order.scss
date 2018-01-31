@@ -27,7 +27,8 @@
 }
 
 .form__title {
-    @include ubuntu($light, 14px);
+    @include ubuntu($light);
+    font-size: rem(14px);
     color: white;
 }
 
@@ -134,7 +135,8 @@
 }
 
 .clear-btn {
-    @include ubuntu($light, 14px);
+    @include ubuntu($light);
+    font-size: rem(14px);
     color: white;
     background-color: transparent;
     padding: 8px 15px;
