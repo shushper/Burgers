@@ -4,9 +4,9 @@
     display: block;
     color: white;
     text-transform: uppercase;
-    padding: 8px 15px;
+    padding: rem(8px) rem(15px);
     background-color: $orange;
-    border-radius: 5px;
+    border-radius: rem(5px);
     text-decoration: none;
     transition: background-color 300ms;
     border: none;

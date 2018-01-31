@@ -28,7 +28,7 @@
 
 .menu__trigger {
     display: block;
-    width: 80px;
+    width: rem(80px);
     height: 100%;
     position: relative;
     text-decoration: none;
@@ -43,8 +43,8 @@
     transform: rotate(-90deg);
     position: absolute;
     left: 0;
-    bottom: 40px;
-    right: 0px;
+    bottom: rem(40px);
+    right: 0;
     top: auto;
     white-space: nowrap; 
     color: white;
@@ -52,7 +52,7 @@
 
 .menu__content {
     height: 100%;
-    width: 0px;
+    width: 0;
     background-color: $dark;
     opacity: 0.93;
     overflow: hidden;
@@ -62,12 +62,12 @@
     @include ubuntu($light);
     font-size: rem(14px);
     color: white;
-    padding: 60px 30px;
+    padding: rem(60px) rem(30px);
 }
 
 .menu__item_active {
     .menu__content {
-        width: 540px;
+        width: rem(540px);
     }
     .menu__trigger-text {
         color: $yellow;

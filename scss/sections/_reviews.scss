@@ -27,7 +27,7 @@
     background-color: rgba(20, 20, 20, 0.7);
     opacity: 0;
     transition: opacity 300ms;
-    padding: 40px 20px;
+    padding: rem(40px) rem(20px);
     align-items: flex-start;
 }
 
@@ -46,18 +46,18 @@
     @include ubuntu($light);
     font-size: rem(14px);
     color: white;
-    margin-top: 20px;
+    margin-top: rem(20px);
 }
 
 .reviews__details {
     @include ubuntu($medium);
     font-size: rem(13px);
-    padding: 10px 16px;
+    padding: rem(10px) rem(16px);
     color: white;
     text-transform: uppercase;
     background-color: #2f3234;
-    border-radius: 6px;
-    margin-top: 14px;
+    border-radius: rem(6px);
+    margin-top: rem(14px);
     line-height: 1.7;
     text-decoration: none;
     transition: background-color 300ms;

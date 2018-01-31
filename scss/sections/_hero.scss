@@ -10,8 +10,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 12px;   
-    padding-bottom: 40px;
+    padding-top: rem(12px);   
+    padding-bottom: rem(40px);
 }
 
 .header {
@@ -33,13 +33,13 @@
 .nav__item {
     display: flex;
     align-items: center;
-    margin-right: 12px;
+    margin-right: rem(12px);
 
     &:before {
         content: "";
         display: block;
-        margin-right: 12px;
-        @include circle(4px, #ffffff)
+        margin-right: rem(12px);
+        @include circle(rem(4px), #ffffff)
     }
 
     &:first-child {
@@ -49,7 +49,7 @@
     } 
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 
@@ -66,7 +66,7 @@
 }
 
 .header__order {
-    margin-left: 14px;
+    margin-left: rem(14px);
 }
 
 .hero__content {
@@ -78,14 +78,14 @@
 }
 
 .hero__text {
-    margin-left: 12px;
+    margin-left: rem(12px);
     display: flex;
     flex-direction: column;
     padding-top: 65px;
 }
 
 .hero__text-title {
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
 }
 
 .hero__text-subtitle {
@@ -93,7 +93,7 @@
     font-size: rem(65px);
     color: #ffffff;
     line-height: 0.94;
-    letter-spacing: -1.5px;
+    letter-spacing: rem(-1.5px);
 }
 
 .hero__downward {
@@ -101,8 +101,8 @@
 }
 
 .hero__downward-icon {
-    width: 29px;
-    height: 14px;
+    width: rem(29px);
+    height: rem(14px);
     fill: white;
 }
 

@@ -12,7 +12,7 @@
 }
 
 .footer {
-    height: 58px;
+    height: rem(58px);
     position: absolute;
     top: auto;
     left: 0;
@@ -62,10 +62,10 @@
 }
 
 .contacts__info-phone-icon {
-    width: 12px;
-    height: 12px;
+    width: rem(12px);
+    height: rem(12px);
     fill: $orange;
-    margin-right: 8px;
+    margin-right: rem(8px);
 }
 
 .socials {
@@ -74,21 +74,21 @@
 }
 
 .socials__item {
-    margin-right: 16px;
+    margin-right: rem(16px);
 
     &:hover .socials__icon {
         opacity: 1;
     }
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: 0;
     }
 
 }
 
 .socials__icon {
-    width: 23px;
-    height: 23px;
+    width: rem(23px);
+    height: rem(23px);
     fill: white;
     opacity: 0.3;
     transition: opacity 300ms;

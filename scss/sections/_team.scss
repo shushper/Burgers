@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 88px;
+    padding-top: rem(88px);
 }
 
 .team__content {
@@ -25,16 +25,16 @@
 }
 
 .team__title {
-    margin-bottom: 23px;
-    padding: 0 25px;
+    margin-bottom: rem(23px);
+    padding: 0 rem(25px);
 }
 
 .team__acco {
-    padding: 0 25px;
+    padding: 0 rem(25px);
 }
 
 .team__item {
-    margin-bottom: 28px;
+    margin-bottom: rem(28px);
 
     &:last-child {
         margin-bottom: 0;
@@ -47,11 +47,11 @@
 }
 
 .team__trigger-triangle {
-    width: 9px;
-    height: 6px;
+    width: rem(9px);
+    height: rem(6px);
     fill: $yellow;
     vertical-align: middle;
-    margin-right: 6px;
+    margin-right: rem(6px);
 }
 
 .team__trigger-title {
@@ -82,25 +82,25 @@
 }
 
 .team__member-text {
-    padding: 12px 0;
+    padding: rem(12px) 0;
 }
 
 .team__member-desc {
-    margin-top: 15px;
+    margin-top: rem(15px);
     line-height: 1.7;
 }
 
 .team__member-photo {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
     flex-shrink: 0;
-    margin-left: 17px;
-    margin-top: 15px;
-    margin-right: 21px;
+    margin-left: rem(17px);
+    margin-top: rem(15px);
+    margin-right: rem(21px);
 }
 
 .team__item_active {
