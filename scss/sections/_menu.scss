@@ -39,7 +39,7 @@
 
 .menu__trigger-text {
     @extend .title;
-    font-size: 40px;
+    font-size: rem(40px);
     transform: rotate(-90deg);
     position: absolute;
     left: 0;

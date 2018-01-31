@@ -518,7 +518,7 @@ p {
   background-size: cover; }
 
 .menu__trigger-text {
-  font-size: 40px;
+  font-size: 2.5rem;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -608,7 +608,7 @@ p {
 .reviews__text {
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: white;
   margin-top: 20px; }
 
