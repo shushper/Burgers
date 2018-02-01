@@ -1,6 +1,10 @@
 .title {
     @include gagalin();
     font-size: rem(72px);
+
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
 .title_yellow {

@@ -1,16 +1,26 @@
 .wrapper {
     width: 100%;
-    min-width: 940px + 20px;
+    // min-width: 940px + 20px;
     overflow: hidden;
+    min-height: 100%;
 }
 
 .section {
     height: 100vh;
     min-height: 650px;
+
+    @include tablets {
+        min-height: 1024px;
+    }
+
+    @include phones {
+        min-height: 800px;
+    }
 }
 
 .container {
     margin: 0 auto;
-    width: 940px;
+    max-width: 940px;
+    width: 95%;
     height: 100%;
 }   

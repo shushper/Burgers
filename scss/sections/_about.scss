@@ -16,20 +16,39 @@
     margin-bottom: rem(30px);
 }
 
-.about__features {
+.feature__list {
     display: flex;  
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
-.about__feature {
+.feature__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 33%;
+
+    @include phones {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 13%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
 }
 
 .feature__icon {
     margin-bottom: rem(28px);
+
+    @include phones {
+        margin-bottom: 0;
+    }
 }
 
 .feature__pic {
@@ -54,6 +73,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+
+    @include phones {
+        align-items: flex-start;
+        text-align: left;
+        margin-left: rem(34px);
+    }
 }
 
 .feature__title {
@@ -67,10 +93,15 @@
     p {
         @include ubuntu($light);
         font-size: rem(14px);
-        text-align: center;
         color: #2f3234;
         padding: 0 rem(8px);
         line-height: 1.7;
+
+        @include phones {
+            align-items: flex-start;
+            text-align: left;
+            padding: 0;
+        }
     }
    
 }

@@ -22,7 +22,15 @@
 }
 
 .header__menu {
-    margin-left: auto;
+    margin-left: auto;  
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    @include tablets() {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -69,23 +77,71 @@
     margin-left: rem(14px);
 }
 
+.header__hamburger {
+    display: none;
+    width: 24px;
+    height: 22px;
+    margin-left: rem(30px);
+
+    @include tablets() {
+        display: block;
+    }
+}
+
 .hero__content {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     align-items: center;
+
+    @include tablets() {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.hero__image {
+    width: 50%;
+
+    @include tablets() {
+        width: 60%;
+    }
+
+    @include phones() {
+        width: 80%;
+    }
+}
+
+.hero__image-pic {
+    width: 100%;
 }
 
 .hero__text {
+    width: 50%;
     margin-left: rem(12px);
     display: flex;
     flex-direction: column;
-    padding-top: 65px;
+    padding-top: rem(65px);
+
+    @include tablets {
+        width: initial;
+        padding-top: rem(15px);
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .hero__text-title {
     margin-bottom: rem(8px);
+
+    @include tablets() {
+        margin-bottom: rem(22px);
+    }
+
+    @include phones {
+        font-size: rem(63px);
+    }
 }
 
 .hero__text-subtitle {
@@ -94,6 +150,10 @@
     color: #ffffff;
     line-height: 0.94;
     letter-spacing: rem(-1.5px);
+
+    @include phones {
+        font-size: rem(54px);
+    }
 }
 
 .hero__downward {

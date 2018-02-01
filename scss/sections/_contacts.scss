@@ -12,7 +12,6 @@
 }
 
 .footer {
-    height: rem(58px);
     position: absolute;
     top: auto;
     left: 0;
@@ -22,10 +21,18 @@
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: rem(8px) 0;
 }
 
 .container_footer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+        padding: rem(12px) 0;
+    }
 }
 
 .footer__section {
@@ -33,17 +40,35 @@
     display: flex;
     align-items: center;
 
+    @include phones {
+        width: 100%;
+    }
+
+
     &_left {
         justify-content: flex-start;
+
+        @include phones {
+            justify-content: center;
+        }
     }
 
     &_right {
         justify-content: flex-end;
+
+        @include phones {
+            justify-content: center;
+            margin-top: rem(20px);
+        }
     }
 }
 
 .contacts__info {
     font-style: normal;
+
+    @include phones {
+        text-align: center;
+    }
 }
 
 .contacts__info-address {
@@ -59,6 +84,11 @@
     color: $orange;
     text-decoration: none;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+        margin-top: rem(8px);
+    }
 }
 
 .contacts__info-phone-icon {
