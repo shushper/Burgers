@@ -52,11 +52,12 @@
                                 <a href="#order" class="order-btn">Заказать</a>
                             </div>
 
-                        
-                            <svg class="header__hamburger">
-                                <use xlink:href="images/sprite/sprite.svg#hamburger"></use>
-                            </svg>
-                            
+
+                            <a href="#" class="header__hamburger">
+                                <svg class="header__hamburger_icon">
+                                    <use xlink:href="images/sprite/sprite.svg#hamburger"></use>
+                                </svg>
+                            </a>
                         </div>
 
                     </header>
@@ -67,7 +68,7 @@
                         </div>
 
                         <div class="hero__text">
-                            <h2 class="hero__text-title title_yellow">Мы делаем</h2>
+                            <h2 class="title title_yellow hero__text-title ">Мы делаем</h2>
                             <div class="hero__text-subtitle">натуральные
                                 <br>бургеры</div>
                         </div>
@@ -83,7 +84,7 @@
 
             <section class="section about" id="about">
                 <div class="container container_about">
-                    <h2 class="about__title title_black">Мы лучшие</h2>
+                    <h2 class="title title_black about__title">Мы лучшие</h2>
                     <ul class="feature__list">
                         <li class="feature__item">
                             <div class="feature__icon">
@@ -142,7 +143,7 @@
             <section class="section team" id="team">
                 <div class="team__container">
                     <div class="team__content">
-                        <h2 class="team__title title_yellow">Команда</h2>
+                        <h2 class="title title_yellow team__title">Команда</h2>
                         <ul class="team__acco">
                             <li class="team__item">
                                 <a href="#" class="team__trigger">
@@ -235,11 +236,11 @@
             </section>
 
             <section class="section menu" id="menu">
-                <h2 class="menu__title title_white">Меню</h2>
+                <h2 class="title title_white menu__title">Меню</h2>
                 <ul class="menu__accordeon">
                     <li class="menu__item">
                         <a href="#" class="menu__trigger" style="background-image:url(images/bg/menu/meat-bg.jpg)">
-                            <div class="menu__trigger-text">Для мясоедов</div>
+                            <h3 class="menu__trigger-text">Для мясоедов</h3>
                         </a>
                         <div class="menu__content">
                             <div class="menu__content-text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
@@ -253,7 +254,7 @@
                     </li>
                     <li class="menu__item ">
                         <a href="#" class="menu__trigger" style="background-image:url(images/bg/menu/vegan-bg.jpg)">
-                            <div class="menu__trigger-text">Вегетарианское</div>
+                            <h3 class="menu__trigger-text">Вегетарианское</h3>
                         </a>
                         <div class="menu__content">
                             <div class="menu__content-text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
@@ -267,7 +268,7 @@
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__trigger" style="background-image:url(images/bg/menu/diet-bg.jpg)">
-                            <div class="menu__trigger-text">Диетическое</div>
+                            <h3 class="menu__trigger-text">Диетическое</h3>
                         </a>
                         <div class="menu__content">
                             <div class="menu__content-text">Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный
@@ -378,30 +379,30 @@
 
             <section class="section order" id="order">
                 <div class="container container_order">
-                    <h2 class="order__title title_yellow">Закажите доставку</h2>
+                    <h2 class="title title_yellow order__title">Закажите доставку</h2>
                     <form class="form">
                         <div class="form__column form__column_left">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
 
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text"  class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
@@ -409,7 +410,7 @@
                                 </label>
                                 <label class="form__block form__block_flat">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" class="form__input">
+                                    <input type="text" class="form__input" required>
                                 </label>
                                 <label class="form__block form__block_floor">
                                     <div class="form__title">Этаж</div>

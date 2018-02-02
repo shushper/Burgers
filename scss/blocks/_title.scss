@@ -8,16 +8,13 @@
 }
 
 .title_yellow {
-    @extend .title;
     color: $yellow;
 }
 
 .title_white {
-    @extend .title;
     color: white;
 }
 
 .title_black {
-    @extend .title;
     color: $dark;
 }
