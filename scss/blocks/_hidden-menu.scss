@@ -1,0 +1,81 @@
+.hidden-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $dark;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hidden-menu__nav-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hidden-menu__nav-link {
+    @include ubuntu($regular);
+    font-size: rem(24px);
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.hidden-menu__nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+
+    &:after {
+        content: "";
+        display: block;
+        @include circle(rem(7px), #ffffff);
+        margin-top: rem(28px);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        &:after {
+            display: none;
+        }
+    } 
+}
+
+.hidden-menu__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hidden-menu__header-container {
+    margin: 0 auto;
+    width: 95%;
+    padding: rem(12px) 0;
+    display: flex;
+    align-items: center;
+}
+
+.hidden-menu__close-btn {
+    margin-left: auto;
+    margin-right: rem(10px);
+    display: block;
+}
+
+.hidden-menu__close-icon {
+    width: 18px;
+    height: 18px;
+    fill: #c2c2c2;
+}
+

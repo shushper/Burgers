@@ -53,7 +53,7 @@
                             </div>
 
 
-                            <a href="#" class="header__hamburger">
+                            <a href="#" class="header__hamburger" id="hamburger-btn">
                                 <svg class="header__hamburger_icon">
                                     <use xlink:href="images/sprite/sprite.svg#hamburger"></use>
                                 </svg>
@@ -582,9 +582,52 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="hidden-menu" id="hidden-menu">
+
+            <div class="hidden-menu__header">
+                <div class="hidden-menu__header-container">
+                    <a href="#" class="logo">
+                        <img class="logo__image" src="images/logo.svg" alt="logo">
+                    </a>
+                    <a href="#" class="hidden-menu__close-btn" id="hidden-menu-close-btn">
+                        <svg class="hidden-menu__close-icon">
+                            <use xlink:href="images/sprite/sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+            <nav class="hidden-menu__nav">
+                <ul class="hidden-menu__nav-list">
+                    <li class="hidden-menu__nav-item">
+                        <a href="#about" class="hidden-menu__nav-link">О нас</a>
+                    </li>
+                    <li class="hidden-menu__nav-item">
+                        <a href="#" class="hidden-menu__nav-link">Бургеры</a>
+                    </li>
+                    <li class="hidden-menu__nav-item">
+                        <a href="#team" class="hidden-menu__nav-link">Команда</a>
+                    </li>
+                    <li class="hidden-menu__nav-item">
+                        <a href="#menu" class="hidden-menu__nav-link">Меню</a>
+                    </li>
+                    <li class="hidden-menu__nav-item">
+                        <a href="#reviews" class="hidden-menu__nav-link">Отзывы</a>
+                    </li>
+                    <li class="hidden-menu__nav-item">
+                        <a href="#contacts" class="hidden-menu__nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
     </div>
 
-
+    <script src="js/hidden-menu.js"></script>
 </body>
 
 </html>
