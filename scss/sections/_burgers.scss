@@ -7,21 +7,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
-
-.burgers__section_left, .burgers__section_right {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    width: 3%;
 }
 
-.burgers__section_center {
+.burgers__slider {
+    position: relative;
     width: 92%;
 
     @include tablets {
         width: 80%;
+    }
+
+    @include phones {
+        width: 96%;
     }
 }
 
@@ -32,20 +30,43 @@
 }
 
 .burgers__arrow_prev {
+    position: absolute;
+    top: 50%;
+    left: rem(-40px);
+    transform: translateY(-50%);
+
     .burgers__arrow-icon {
         transform: rotate(90deg);
+    }
+
+    @include tablets {
+        left: rem(-60px);
+    }
+
+    @include phones {
+        left: 0;
     }
 }
 
 .burgers__arrow_next {
+    position: absolute;
+    top: 50%;
+    right: rem(-40px);
+    transform: translateY(-50%);
+
     .burgers__arrow-icon {
         transform: rotate(-90deg);
     }
+
+    @include tablets {
+        right: rem(-60px);
+    }
+
+    @include phones {
+        right: 0;
+    }
 }
 
-.burgers__slider {
-    width: 100%;
-}
 
 .burgers__slide {
     width: 100%;
@@ -70,6 +91,10 @@
         width: 82%;
         justify-content: flex-end;
     }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .burgers__slide-pic {
@@ -90,6 +115,11 @@
         padding-top: rem(40px);
         align-items: center;
     }
+
+    @include phones {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .burgers__slide-title {
@@ -97,6 +127,10 @@
 
     @include tablets {
         width: 80%;
+    }
+
+    @include phones {
+        line-height: 1.2;
     }
 }
 
@@ -109,6 +143,10 @@
 
     @include tablets {
         margin-top: rem(50px);
+    }
+
+    @include phones {
+        margin-top: rem(22px);
     }
 }
 
@@ -132,10 +170,18 @@
 
     &-about {
         font-size: rem(72px);
+
+        @include phones {
+            font-size: rem(50px);
+        }
     }
 
     &-currency {
         font-size: rem(30px);
+
+        @include phones {
+            font-size: rem(25px);
+        }
     }
 }
 
@@ -159,6 +205,11 @@
 
     &:hover {
         background-color: $orange;
+    }
+
+    @include phones {
+        top: rem(-115px);
+        left: rem(-40px);
     }
 }
 
@@ -192,6 +243,11 @@
         top: rem(-80px);
         left: auto;
         bottom: auto;
+    }
+
+    @include phones {
+        top: rem(-120px);
+        right: rem(-35px);
     }
 }
 
