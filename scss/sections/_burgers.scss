@@ -18,8 +18,11 @@
 }
 
 .burgers__section_center {
-    height: 73%;
     width: 92%;
+
+    @include tablets {
+        width: 80%;
+    }
 }
 
 .burgers__arrow-icon {
@@ -41,21 +44,32 @@
 }
 
 .burgers__slider {
-    height: 100%;
     width: 100%;
 }
 
 .burgers__slide {
-    position: relative;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .burgers__slide-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     width: 50%;
+
+    @include tablets {
+        width: 82%;
+        justify-content: flex-end;
+    }
 }
 
 .burgers__slide-pic {
@@ -69,10 +83,21 @@
     display: flex;
     flex-direction: column;
     padding: rem(10px);
+
+    @include tablets {
+        text-align: center;
+        width: 100%;
+        padding-top: rem(40px);
+        align-items: center;
+    }
 }
 
 .burgers__slide-title {
     line-height: 0.9;
+
+    @include tablets {
+        width: 80%;
+    }
 }
 
 .burgers__slide-text {
@@ -81,6 +106,10 @@
     color: white;
     margin-top: rem(42px);
     line-height: 1.75;
+
+    @include tablets {
+        margin-top: rem(50px);
+    }
 }
 
 .burgers__slide-order {
@@ -88,6 +117,10 @@
     flex-direction: row;
     align-items: baseline;
     margin-top: rem(8px);
+
+    @include tablets {
+        margin-top: rem(30px);
+    }
 }
 
 .burgers__slide-price {
@@ -112,7 +145,7 @@
 
 .burgers__slide-composition {
     position: absolute;
-    top: 0;
+    top: rem(-80px);
     left: 0;
     width: rem(90px);
     height: rem(90px);
@@ -147,12 +180,19 @@
     @include gagalin();
     width: rem(60px);
     position: absolute;
-    bottom: 0;
+    bottom: rem(-80px);
     left: 0;
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        right: 0;
+        top: rem(-80px);
+        left: auto;
+        bottom: auto;
+    }
 }
 
 .burgers__slide-energy-icon {
