@@ -28,8 +28,7 @@ function hideHiddenMenu() {
 }
 
 function onWindowResize() {
-    console.log(window.innerWidth);
-
+    
     //Если пользователь растянет экран по ширине больше порогового значения для планшета - скрываем меню
     if (window.innerWidth > 768) {
         hideHiddenMenu()
