@@ -23,21 +23,13 @@
     }
 }
 
-.burgers__arrow-icon {
-    width: rem(27px);
-    height: rem(14px);
-    fill: white;
-}
 
 .burgers__arrow_prev {
     position: absolute;
     top: 50%;
     left: rem(-40px);
-    transform: translateY(-50%);
-
-    .burgers__arrow-icon {
-        transform: rotate(90deg);
-    }
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 200ms;
 
     @include tablets {
         left: rem(-60px);
@@ -46,17 +38,18 @@
     @include phones {
         left: 0;
     }
+
+    &:hover {
+        transform: translateY(-50%) rotate(90deg) scale(1.2);
+    }
 }
 
 .burgers__arrow_next {
     position: absolute;
     top: 50%;
     right: rem(-40px);
-    transform: translateY(-50%);
-
-    .burgers__arrow-icon {
-        transform: rotate(-90deg);
-    }
+    transform: translateY(-50%) rotate(-90deg);
+    transition: transform 200ms;
 
     @include tablets {
         right: rem(-60px);
@@ -65,7 +58,19 @@
     @include phones {
         right: 0;
     }
+
+
+    &:hover {
+        transform: translateY(-50%) rotate(-90deg) scale(1.2);
+    }
 }
+
+.burgers__arrow-icon {
+    width: rem(27px);
+    height: rem(14px);
+    fill: white;
+}
+
 
 
 .burgers__slide {
@@ -190,9 +195,27 @@
 }
 
 .burgers__slide-composition {
+    display: flex;
     position: absolute;
     top: rem(-80px);
     left: 0;
+    
+    @include phones {
+        top: rem(-115px);
+        left: rem(-40px);
+    }
+
+    &:hover  .composition__popup {
+        opacity: 0.9;
+        left: rem(90px);
+    }
+
+    &:hover .composition__btn {
+        background-color: $orange;
+    }
+}
+
+.composition__btn {
     width: rem(90px);
     height: rem(90px);
     display: flex;
@@ -200,31 +223,67 @@
     align-items: center;
     justify-content: center;
     background-color: #f08c33;
-    border-radius: rem(4px);
-    text-decoration: none;
-
-    &:hover {
-        background-color: $orange;
-    }
-
-    @include phones {
-        top: rem(-115px);
-        left: rem(-40px);
-    }
+    border-radius: rem(4px);    
 }
 
-.burgers__slide-composition-icon {
+.composition__btn-icon {
     width: rem(46px);
     height: rem(44px);
     fill: white;
 }
 
-.burgers__slide-composition-title {
+.composition__btn-title {
     @include gagalin();
     font-size: rem(14px);
     text-transform: uppercase;
     color: white;
     margin-top: rem(8px);
+}
+
+.composition__popup {
+    position: absolute;
+    left: -9999px;
+    background: white;
+    opacity: 0;
+    width: rem(270px);
+    padding: rem(20px);
+    border-radius: rem(5px);
+    transition: opacity 300ms;
+    z-index: 10;
+}
+
+.composition__table {
+    width: 100%;
+}
+
+.composition__table-icon {
+    width: rem(44px);
+    height: rem(44px);
+
+    &_beef, &_sauce {
+        fill: $orange;
+    }
+
+    &_buns, &_cheese {
+        fill: $yellow;
+    }
+
+    &_salad, &_cucumber {
+        fill: $green;
+    }
+}
+
+.compostion__table-title {
+    @include ubuntu($medium);
+    font-size: rem(14px);
+    color: $dark;
+}
+
+.compostion__table-weight {
+    @include ubuntu($light);
+    font-size: rem(14px);
+    color: $dark;
+    text-align: right;
 }
 
 .burgers__slide-energy {

@@ -163,6 +163,11 @@
 
 .hero__downward {
     display: block;
+    transition: transform 200ms;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .hero__downward-icon {
