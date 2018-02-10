@@ -74,18 +74,20 @@
 
 
 .burgers__slide {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: rem(470px);
 
     @include tablets {
+        height: initial;
         flex-direction: column;
     }
 }
 
-.burgers__slide-image {
-    position: relative;
+.burgers__image {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -94,21 +96,23 @@
 
     @include tablets {
         width: 82%;
-        justify-content: flex-end;
+        margin-top: rem(80px);
+        height: rem(330px);
     }
 
     @include phones {
         width: 90%;
+        margin-top: rem(100px);
     }
 }
 
-.burgers__slide-pic {
+.burgers__image-pic {
     display: block;
     margin: 0 auto;
     width: 95%;
 }
 
-.burgers__slide-content {
+.burgers__content {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -127,7 +131,7 @@
     }
 }
 
-.burgers__slide-title {
+.burgers__content-title {
     line-height: 0.9;
 
     @include tablets {
@@ -139,7 +143,7 @@
     }
 }
 
-.burgers__slide-text {
+.burgers__content-text {
     @include ubuntu($light);
     font-size: rem(14px);
     color: white;
@@ -155,7 +159,7 @@
     }
 }
 
-.burgers__slide-order {
+.burgers__content-order {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -166,7 +170,7 @@
     }
 }
 
-.burgers__slide-price {
+.burgers__content-price {
     @include gagalin();
     display: flex;
     flex-direction: row; 
@@ -190,20 +194,15 @@
     }
 }
 
-.order-btn_burgers {
+.burgers__content-order-btn {
     margin-left: rem(28px);
 }
 
-.burgers__slide-composition {
+.composition {
     display: flex;
     position: absolute;
-    top: rem(-80px);
+    top: 0;
     left: 0;
-    
-    @include phones {
-        top: rem(-115px);
-        left: rem(-40px);
-    }
 
     &:hover  .composition__popup {
         opacity: 0.9;
@@ -224,6 +223,7 @@
     justify-content: center;
     background-color: #f08c33;
     border-radius: rem(4px);    
+    transition: background-color 300ms;
 }
 
 .composition__btn-icon {
@@ -273,24 +273,24 @@
     }
 }
 
-.compostion__table-title {
+.composition__table-title {
     @include ubuntu($medium);
     font-size: rem(14px);
     color: $dark;
 }
 
-.compostion__table-weight {
+.composition__table-weight {
     @include ubuntu($light);
     font-size: rem(14px);
     color: $dark;
     text-align: right;
 }
 
-.burgers__slide-energy {
+.energy {
     @include gagalin();
     width: rem(60px);
     position: absolute;
-    bottom: rem(-80px);
+    bottom: 0;
     left: 0;
     color: white;
     text-align: center;
@@ -299,24 +299,20 @@
 
     @include tablets {
         right: 0;
-        top: rem(-80px);
+        top: 0;
         left: auto;
         bottom: auto;
     }
 
-    @include phones {
-        top: rem(-120px);
-        right: rem(-35px);
-    }
 }
 
-.burgers__slide-energy-icon {
+.energy__icon {
     width: rem(60px);
     height: rem(60px);
     fill: white;
 }
 
-.burgers__slide-energy-value {
+.energy__value {
     font-size: rem(20px);
     position: absolute;
     left: 0;
@@ -324,7 +320,7 @@
     top: rem(24px);
 }
 
-.burgers__slide-energy-measure {
+.energy__measure {
     font-size: rem(14px);
 }
 
