@@ -73,6 +73,7 @@
     fill: $yellow;
     vertical-align: middle;
     margin-right: rem(6px);
+    transition: transform 300ms;
 }
 
 .team__trigger-title {
@@ -92,12 +93,23 @@
     display: flex;
     height: 0;
     overflow: hidden;
+    transition: height 300ms;
 
     @include tablets() {
         flex-direction: column;
         align-items: center;
     }
 }
+
+.team__item_active {
+    .team__trigger-triangle {
+        transform: rotate(-180deg);
+    }
+    .team__trigger-title {
+        color: $yellow;
+    }
+}
+
 
 .team__member-title {
     @include ubuntu($bold);
@@ -133,15 +145,4 @@
     margin-right: rem(21px);
 }
 
-.team__item_active {
-    .team__trigger-title {
-        color: $yellow;
-    }
-    .team__member {
-        height: initial;
-    }
-    .team__trigger-triangle {
-        transform: rotate(180deg);
-    }
-}
 
