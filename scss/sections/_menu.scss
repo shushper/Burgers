@@ -67,6 +67,7 @@
     background-color: $dark;
     opacity: 0.93;
     overflow: hidden;
+    transition: width 300ms;
 }
 
 .menu__content-text {
@@ -77,11 +78,38 @@
 }
 
 .menu__item_active {
-
-    .menu__content {
-        width: rem(540px);
-    }
     .menu__trigger-text {
         color: $yellow;
     }
+}
+
+.menu__overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    transition: opacity 300ms;
+}
+
+.menu__overlay-content {
+    width: 100%;
+    opacity: 1;
+}
+
+.menu__overlay-trigger-text {
+    color: $yellow;
+}
+
+.menu__overlay-close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.menu__overlay-close-icon {
+    width: 18px;
+    height: 18px;
+    fill: #c2c2c2;
 }

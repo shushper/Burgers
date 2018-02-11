@@ -1138,7 +1138,10 @@ p {
   width: 0;
   background-color: #2f3234;
   opacity: 0.93;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: width 300ms;
+  -o-transition: width 300ms;
+  transition: width 300ms; }
 
 .menu__content-text {
   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
@@ -1147,11 +1150,36 @@ p {
   color: white;
   padding: 3.75rem 1.875rem; }
 
-.menu__item_active .menu__content {
-  width: 33.75rem; }
-
 .menu__item_active .menu__trigger-text {
   color: #f9b43b; }
+
+.menu__overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  transition: opacity 300ms; }
+
+.menu__overlay-content {
+  width: 100%;
+  opacity: 1; }
+
+.menu__overlay-trigger-text {
+  color: #f9b43b; }
+
+.menu__overlay-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px; }
+
+.menu__overlay-close-icon {
+  width: 18px;
+  height: 18px;
+  fill: #c2c2c2; }
 
 .reviews__list {
   height: 100%;

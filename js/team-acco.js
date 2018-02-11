@@ -1,5 +1,5 @@
-const teamTriggers = document.getElementsByClassName("team__trigger");
 const teamAcco = document.querySelector(".team__acco");
+const teamTriggers = teamAcco.getElementsByClassName("team__trigger");
 
 
 for (let i = 0; i < teamTriggers.length; i++) {
@@ -9,11 +9,11 @@ for (let i = 0; i < teamTriggers.length; i++) {
         let teamItem = this.parentElement;
         let teamMember = teamItem.querySelector('.team__member')
 
-        if (isActive(teamItem)) {
+        if (isTeamItemActive(teamItem)) {
             teamItem.classList.remove('team__item_active');
             teamMember.style.height = 0;
         } else {
-            let activeItem = teamAcco.querySelector("." + 'team__item_active');
+            let activeItem = teamAcco.querySelector('.team__item_active');
             if (activeItem != null) {
                 activeItem.classList.remove('team__item_active');
                 activeItem.querySelector('.team__member').style.height = 0;
@@ -25,7 +25,7 @@ for (let i = 0; i < teamTriggers.length; i++) {
     })
 }
 
-function isActive(teamItem) {
+function isTeamItemActive(teamItem) {
     return teamItem.classList.contains('team__item_active');
 }
 
