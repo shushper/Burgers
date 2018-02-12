@@ -3,11 +3,8 @@ const hiddenMenu = document.querySelector('#hidden-menu');
 const closeBtn = document.querySelector('#hidden-menu-close-btn');
 const links = document.getElementsByClassName('hidden-menu__nav-link');
 
-var menuShown = false;
 
 function showHiddenMenu() {
-    menuShown = true;
-
     //блокируем скролл страницы
     document.body.classList.add('body_nonscroll')
 
@@ -17,8 +14,6 @@ function showHiddenMenu() {
 }
 
 function hideHiddenMenu() {
-    menuShown = false;
-
     //разблокируем скролл страницы
     document.body.classList.remove('body_nonscroll')
 

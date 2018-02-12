@@ -1,0 +1,52 @@
+.reviews-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $dark;
+    opacity: 0.92;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-popup__content {
+    border-radius: rem(5px);
+    background-color: white;
+    padding: rem(30px) rem(20px);
+    width: rem(460px);
+    font-size: rem(14px);
+    color: $dark;
+    position: relative;
+
+    @include phones {
+        width: 90%;
+    }
+}
+
+
+.reviews-popup__title {
+    @include gagalin();
+    
+}
+
+.reviews-popup__text {
+    margin-top: rem(25px);
+    @include ubuntu($light);
+}
+
+.reviews-popup__close-btn {
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    opacity: 0.7;
+}
+
+.reviews-popup__close-icon {
+    width: 18px;
+    height: 18px;
+    fill: $orange;
+}
