@@ -654,18 +654,24 @@ p {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.burgers__slider {
+.burgers__slider-container {
   position: relative;
-  width: 92%; }
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media screen and (max-width: 768px) {
-    .burgers__slider {
+    .burgers__slider-container {
       width: 80%; } }
   @media screen and (max-width: 480px) {
-    .burgers__slider {
+    .burgers__slider-container {
       width: 96%; } }
 
-.burgers__arrow_prev {
+.burgers__arrow {
   position: absolute;
+  z-index: 10; }
+
+.burgers__arrow_prev {
   top: 50%;
   left: -2.5rem;
   -webkit-transform: translateY(-50%) rotate(90deg);
@@ -688,7 +694,6 @@ p {
     transform: translateY(-50%) rotate(90deg) scale(1.2); }
 
 .burgers__arrow_next {
-  position: absolute;
   top: 50%;
   right: -2.5rem;
   -webkit-transform: translateY(-50%) rotate(-90deg);
@@ -715,9 +720,24 @@ p {
   height: 0.875rem;
   fill: white; }
 
+.burgers__slider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.burgers__items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0px; }
+
 .burgers__slide {
   position: relative;
-  width: 100%;
+  width: 0px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,8 +881,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 0.3125rem;
+  left: 0.3125rem; }
   .composition:hover .composition__popup {
     opacity: 0.9;
     left: 5.625rem; }
@@ -948,8 +968,8 @@ p {
   font-weight: 400;
   width: 3.75rem;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 0.3125rem;
+  left: 0.3125rem;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -958,11 +978,12 @@ p {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 10; }
   @media screen and (max-width: 768px) {
     .energy {
-      right: 0;
-      top: 0;
+      right: 0.3125rem;
+      top: 0.3125rem;
       left: auto;
       bottom: auto; } }
 

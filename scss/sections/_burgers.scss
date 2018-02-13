@@ -10,9 +10,11 @@
     justify-content: center;
 }
 
-.burgers__slider {
+.burgers__slider-container {
     position: relative;
     width: 92%;
+    display: flex;
+
 
     @include tablets {
         width: 80%;
@@ -23,9 +25,12 @@
     }
 }
 
+.burgers__arrow {
+    position: absolute;
+    z-index: 10;
+}
 
 .burgers__arrow_prev {
-    position: absolute;
     top: 50%;
     left: rem(-40px);
     transform: translateY(-50%) rotate(90deg);
@@ -45,7 +50,6 @@
 }
 
 .burgers__arrow_next {
-    position: absolute;
     top: 50%;
     right: rem(-40px);
     transform: translateY(-50%) rotate(-90deg);
@@ -71,11 +75,24 @@
     fill: white;
 }
 
+.burgers__slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    
+}
 
+.burgers__items {
+    position: relative;
+    display: flex;
+    right: 0px;
+    // transition: right 300ms;
+}
 
 .burgers__slide {
     position: relative;
-    width: 100%;
+    width: 0px;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -201,8 +218,8 @@
 .composition {
     display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: rem(5px);
+    left: rem(5px);
 
     &:hover  .composition__popup {
         opacity: 0.9;
@@ -290,16 +307,17 @@
     @include gagalin();
     width: rem(60px);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: rem(5px);
+    left: rem(5px);
     color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
+    z-index: 10;
 
     @include tablets {
-        right: 0;
-        top: 0;
+        right: rem(5px);
+        top: rem(5px);
         left: auto;
         bottom: auto;
     }
