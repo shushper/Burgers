@@ -33,7 +33,12 @@
     border-radius: 50%;
 }
 
-.scroll__item:hover .scroll__dot_wrapper {
-    border: rem(1px) solid white;
-    border-radius: 50%;
+.scroll__item {
+    &.active, &:hover{
+        .scroll__dot_wrapper {
+            border: rem(1px) solid white;
+            border-radius: 50%;
+        }
+    }
 }
+

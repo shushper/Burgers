@@ -12,6 +12,10 @@
     justify-content: center;
     padding-top: rem(12px);   
     padding-bottom: rem(40px);
+
+    @include phones {
+        padding-bottom: rem(20px);
+    }
 }
 
 .header {
@@ -135,6 +139,10 @@
         margin-left: 0;
         text-align: center;
     }
+
+    @include phones {
+        padding-top: rem(10px);
+    }
 }
 
 .hero__text-title {
@@ -145,6 +153,7 @@
     }
 
     @include phones {
+        margin-bottom: rem(8px);
         font-size: rem(63px);
     }
 }
