@@ -93,9 +93,6 @@ p {
   width: 95%;
   height: 100%; }
 
-.body_nonscroll {
-  overflow: hidden; }
-
 .title, .menu__trigger-text {
   font-family: 'Gagalin', Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -272,8 +269,7 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #2f3234;
-  opacity: 0.92;
+  background-color: rgba(47, 50, 52, 0.92);
   z-index: 100;
   display: none;
   -webkit-box-orient: vertical;
@@ -294,6 +290,7 @@ p {
   width: 28.75rem;
   font-size: 0.875rem;
   color: #2f3234;
+  opacity: 1;
   position: relative; }
   @media screen and (max-width: 480px) {
     .reviews-popup__content {
@@ -318,6 +315,66 @@ p {
   width: 18px;
   height: 18px;
   fill: #e45028; }
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(47, 50, 52, 0.92);
+  z-index: 100;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.modal__content {
+  border-radius: 0.3125rem;
+  background-color: white;
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.modal__text {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #2f3234;
+  text-align: center; }
+
+.modal__btn {
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 0.9375rem;
+  background-color: #e45028;
+  border-radius: 0.3125rem;
+  margin-top: 1.125rem;
+  text-decoration: none;
+  -webkit-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  transition: background-color 300ms; }
+  .modal__btn:hover {
+    background-color: #ce401a; }
 
 .hero {
   background-image: url("../images/bg/sections/hero-bg.jpg");

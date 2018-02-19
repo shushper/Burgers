@@ -4,8 +4,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: $dark;
-    opacity: 0.92;
+    background-color: rgba($dark, $alpha: 0.92);
     z-index: 100;
     display: none;
     flex-direction: column;
@@ -20,6 +19,7 @@
     width: rem(460px);
     font-size: rem(14px);
     color: $dark;
+    opacity: 1;
     position: relative;
 
     @include phones {

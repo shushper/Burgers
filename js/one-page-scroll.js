@@ -12,7 +12,7 @@ const setActiveMenuItem = itemEq => {
 }
 
 const performSectionTransition = sectionEq => {
-    const position = `${sectionEq * -100}%`;
+    const position = `${sectionEq * -100}%`;    
 
     if (inScroll) {
         return;

@@ -15,8 +15,6 @@ for (let i = 0; i < reviewsDetailsBtns.length; i++) {
 }
 
 function showReviewsPopup(reviewsContent) {
-    document.body.classList.add('body_nonscroll')
-
     let reviewsTite = reviewsContent.querySelector('.reviews__title');
     let reviewsText = reviewsContent.querySelector('.reviews__text');
 
@@ -27,8 +25,6 @@ function showReviewsPopup(reviewsContent) {
 }
 
 function hideReviewsPopup() {
-    document.body.classList.remove('body_nonscroll')
-
     reviewsPopup.style = 'display: none';
 }
 
