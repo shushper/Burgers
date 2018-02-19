@@ -8,7 +8,7 @@ function init() {
         controls: ['zoomControl']
     });
 
-    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable(['scrollZoom', 'multiTouch']);
 
     let coords = [
         [56.860327, 60.554942],
